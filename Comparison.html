@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Wind Speed page</title>
+  <title>Comparison page</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -33,7 +33,7 @@
                 </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="Comparison.html">Comparison</a>
+                <a class="nav-link" href="#">Comparison<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="Data.html">Data</a>
@@ -41,28 +41,39 @@
             </ul>
         </div>
     </nav>
-    <div class="row content">
-        <div class="col-sm-12 col-md-8 col-lg-8">
-            <h2 class="text-left">Wind Speed</h2>
+    <div class="content">
+        <div class="col-sm-12 col-md-12" >
+            <h2 class="text-left">Comparison: Latitude vs. X</h2>
             <hr class="my-4">
-            <img src="Resources/images/Fig4.png" alt="Latitude vs Wind Speed" class="img-fluid">
-            <p>This scatter plot, latitude vs wind speed, does not have a clear trend. Cities would have windy days and calm days. Distance from the equator to city is less likely to be a factor that influences wind speed.</p>
-        </div>
-         <div class="col-sm-12 col-md-4 col-lg-4" >
-            <h2 class="text-left">Visualizations</h2>
-            <hr class="my-4">
-            <a href="MaxTemperature.html">
-                <img src="Resources/images/Fig1.png" class="rounded float-left thumbnail" alt="Latitude vs Temperature">
-            </a>
-            <a href="Humidity.html">
-                <img src="Resources/images/Fig2.png" class="rounded float right thumbnail" alt="Latitude vs Humidity">
-            </a>
-            <a href="Cloudiness.html">
-                <img src="Resources/images/Fig3.png" class="rounded float-left  thumbnail" alt="Latitude vs Temperature">
-            </a>
-            <a href="WindSpeed.html">
-                <img src="Resources/images/Fig4.png" class="rounded float right  thumbnail" alt="Latitude vs Humidity">
-            </a>
+            <p>Click any plot to get an in-analysis.</p>
+            <div class="container">
+                <div class="row imagetiles">
+                    <div class="col-lg-4 col-sm-10">
+                        <h3 class="text-center">vs. Max Temperature</h3>
+                        <a href="MaxTemperature.html">
+                            <img src="Resources/images/Fig1.png" class="rounded float-left thumbnail" alt="Latitude vs Temperature">
+                        </a>
+                    </div>
+                    <div class="col-lg-4  col-sm-10">
+                        <h3 class="text-center">vs. Humidity</h3>
+                        <a href="Humidity.html">
+                            <img src="Resources/images/Fig2.png" class="rounded float right thumbnail" alt="Latitude vs Humidity">
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-10">
+                        <h3 class="text-center">vs. Cloudiness</h3>
+                        <a href="Cloudiness.html">
+                            <img src="Resources/images/Fig3.png" class="rounded float-left  thumbnail" alt="Latitude vs Temperature">
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-10">
+                        <h3 class="text-center">vs. Wind Speed</h3>
+                        <a href="WindSpeed.html">
+                            <img src="Resources/images/Fig4.png" class="rounded float right  thumbnail" alt="Latitude vs Humidity">
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
